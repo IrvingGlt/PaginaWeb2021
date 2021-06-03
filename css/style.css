@@ -23,3 +23,53 @@ img{
     margin-bottom: 20px;
     margin-left: 10px      
 }
+ul{
+    list-style-type: none;
+    background-color: #425dd4;
+    margin: 0;
+    padding: 0%;
+    overflow: hidden;
+}
+li a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+li a:hover{
+    background-color: #9dc430;
+}
+ol, li{
+    color: white;
+    font-size: 20px;
+}
+table{
+    width: 100%;
+}
+caption{
+    color: gold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    line-height: 50px;
+}
+table, th, td{
+    border: 3px solid whitesmoke;
+    border-collapse: collapse;
+    padding: 5px;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+td{
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #425dd4;
+}
+tr:nth-child(odd){
+    background-color: #3cc430;
+}
