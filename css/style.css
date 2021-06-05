@@ -73,3 +73,55 @@ tr:nth-child(even){
 tr:nth-child(odd){
     background-color: #3cc430;
 }
+
+
+
+.contenedor{
+    margin: 50px auto;
+    width: 800px;
+    padding: 30px;
+    background: #03192680;
+    border-radius: 10px;
+}
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.contenedor .elemento label{
+ color: white;
+
+}
+.contenedor .elemento2 label{
+    color: white;
+   
+   }
+.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    background: transparent;
+    border: none; 
+    border-bottom: 1px solid white;  
+    margin-bottom: 30px;
+   }
+   .contenedor  .elemento .boton input{
+    background-color: #031926;
+    border: none;
+} 
+ 
+.contenedor  .elemento .boton input:hover{
+    background-color: #468189;
+} 
+ 
+textarea{
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    background: transparent;
+    border: none; 
+    border-bottom: 1px solid white;  
+    margin-bottom: 30px;
+}
