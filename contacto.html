@@ -17,15 +17,15 @@
         <li><a href="contacto.html">Contactame</a></li>
     </ul>
     <div class="contenedor">
-        <h2>Contactame</h2>
+        <h2 id="contacto" onmouseover="cambioA(this)" onmouseout="cambioW(this)">Contactame</h2>
         <form id="formulario" name="formulario" method="POST">
             <div class="elemento">
                 <label for="nombre">Nombre Completo</label>
-                <input type="text" id="nombre" name="nombre" required="true"><br/>
+                <input type="text" id="nombre" name="nombre" required="true" onfocus="cambioG(this)" onblur="cambioT(this)" onchange="nombreU()"><br/>
             </div>
             <div class="elemento">
                 <label for="email">Correo</label>
-                <input type="email" id="email" name="email" required="true"><br/>
+                <input type="email" id="email" name="email" required="true" onfocus="cambioG(this)" onblur="cambioT(this)"><br/>
             </div>
             <div class="elemento2">
                 <label >Asunto</label><br/>
@@ -38,7 +38,7 @@
             <br/>
             <div class="elemento">
                 <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" rows="10" cols="40" required="true"></textarea><br/>
+                <textarea id="mensajes" name="mensaje" rows="10" cols="40" required="true"></textarea><br/>
             </div>
             <br/>
             <div class="elemento2">
@@ -52,11 +52,43 @@
             <br/>         
             <div class="elemento">
                 <div class="boton">
-                <input type="submit" value="Contactar">
+                <input type="submit" value="Contactar" onclick="enviar(this)">
                 </div>
             </div>
            
         </form>
-    </div>   
+    </div>  
+    <script>
+        document.getElementById("mensajes").addEventListener("focus", change)
+        document.getElementById("mensajes").addEventListener("blur", restore)
+
+        function nombreU(){
+            var nombre= document.getElementById("nombre")
+            nombre.value = nombre.value.toUpperCase();
+        }
+        function enviar(){            
+            alert("Mensaje Enviado")
+        }
+        function cambioA(colorB){
+            colorB.style.color= 'blue'
+        }
+        function cambioW(colorW){
+            colorW.style.color= 'white'
+        }
+        function cambioG(colorG){
+            colorG.style.background = 'dodgerblue'
+        }
+        function cambioT(colorT){
+            colorT.style.background = 'transparent'
+        }
+        function change(event){
+            const element = event.target
+            element.style.background = 'dodgerblue'
+        }
+        function restore(event){
+            const element = event.target
+            element.style.background = 'transparent'
+        }
+    </script> 
 </body>
 </html>
