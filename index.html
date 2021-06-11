@@ -12,12 +12,12 @@
 </head>
 <body>
     <ul>
-        <li><a href="index.html">Index</a></li>
-        <li><a href="pagina2.html">VideoJuegos</a></li>
-        <li><a href="pagina3.html">Anime</a></li>
-        <li><a href="https://github.com/IrvingGlt?tab=repositories" target="_blank">Mi GitHub</a></li>
-        <li><a href="pagina4.html">Lenguajes de Programación</a></li>
-        <li><a href="contacto.html">Contactame</a></li>
+        <li><a href="index.html" id="inicio" class="barraN">Index</a></li>
+        <li><a href="pagina2.html" class="barraN">VideoJuegos</a></li>
+        <li><a href="pagina3.html" class="barraN">Anime</a></li>
+        <li><a href="https://github.com/IrvingGlt?tab=repositories" target="_blank" class="barraN">Mi GitHub</a></li>
+        <li><a href="pagina4.html" class="barraN">Lenguajes de Programación</a></li>
+        <li><a href="contacto.html" class="barraN">Contactame</a></li>
     </ul>
     <h1 style="color: hsla(187, 86%, 59%, 0.902)">Mis Datos</h1>
     <hr/>
@@ -29,6 +29,12 @@
     <h2>Pasatiempos:</h2>
     <p>Me gusta jugar videojuegos, <del>Estudiar</del>, pasar tiempo en la computadora, platicar con amigos y programar.</p>  
     <br>
-    <hr/>    
+    <hr/>   
+    <script>
+        const inicioA = document.getElementById("inicio")
+        const githubA = document.getElementsByClassName('barraN')
+        console.log('No andes de curioso en mi ' + inicioA.innerHTML)
+        console.log(`Bueno ya que entraste aqui haz clic en uno de los ${githubA.length} elementos de la barra de navegación`)
+    </script> 
 </body>
 </html>
