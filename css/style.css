@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(119, 172, 241);
+    background-color: rgb(247, 247, 247);
 }
 h1{
     text-align: center;
@@ -7,17 +7,17 @@ h1{
     color: #231e23;
 }
 h2{
-    color: rgba(255, 255, 255, 0.705);
+    color: #393e46b4;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 p{
     font-size: large;
-    color: white;
+    color: #393e46b4;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 img{    
-    padding:3px;
-    border: 10px solid rgb(129, 224, 150);
+    padding:0px;
+    border: 10px solid rgb(57, 62, 70);
     margin-top: 40px;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -25,7 +25,7 @@ img{
 }
 ul{
     list-style-type: none;
-    background-color: #425dd4;
+    background-color: #929aab;
     margin: 0;
     padding: 0%;
     overflow: hidden;
@@ -40,17 +40,17 @@ li a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 li a:hover{
-    background-color: #9dc430;
+    background-color: #393e46;
 }
 ol, li{
-    color: white;
+    color: #393e46e6;
     font-size: 20px;
 }
 table{
     width: 100%;
 }
 caption{
-    color: gold;
+    color: #393e46;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     line-height: 50px;
@@ -68,10 +68,10 @@ td{
 }
 
 tr:nth-child(even){
-    background-color: #425dd4;
+    background-color: #929aab;
 }
 tr:nth-child(odd){
-    background-color: #3cc430;
+    background-color: #393e46;
 }
 
 
@@ -80,7 +80,7 @@ tr:nth-child(odd){
     margin: 50px auto;
     width: 800px;
     padding: 30px;
-    background: #03192680;
+    background: #16161680;
     border-radius: 10px;
 }
 .contenedor h2{
@@ -108,12 +108,12 @@ tr:nth-child(odd){
     margin-bottom: 30px;
    }
    .contenedor  .elemento .boton input{
-    background-color: #031926;
+    background-color: #343a40;
     border: none;
 } 
  
 .contenedor  .elemento .boton input:hover{
-    background-color: #468189;
+    background-color: #929aab;
 } 
  
 textarea{
