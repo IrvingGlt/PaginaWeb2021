@@ -1,6 +1,8 @@
-body{
-    background-color: rgb(247, 247, 247);
+html{    
+    background: url(../images/ft2.png),linear-gradient(to left, #929aab, #f7f7f7);   
+    
 }
+
 h1{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
