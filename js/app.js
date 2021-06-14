@@ -20,8 +20,8 @@ function agregarComentario(){
     if(nombre.value == "" || apellido.value == "" || comentario2.value == ""){
         alert("Rellena todos los campos")
     }else{
-    const objEstudiante = new Comentario(nombre.value,apellido.value,comentario2.value)
-    arregloComentarios.push(objEstudiante)
+    const objComentario = new Comentario(nombre.value,apellido.value,comentario2.value)
+    arregloComentarios.push(objComentario)
     alert("Gracias por tu Comentario!!!")
     mostrarComentarios()
     document.getElementById("nombre").value = ""
