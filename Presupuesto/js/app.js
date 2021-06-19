@@ -124,6 +124,8 @@ let agregarDato = ()=>{
         egresos.push(new Egreso(descripcion.value, +valor.value))
         cargarCabecero()
         cargarEgresos()
+        document.getElementById("descripcion").value = ''
+        document.getElementById("valor").value = ''
         }
     }
     
